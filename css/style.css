@@ -1,0 +1,266 @@
+body{
+margin:10px;
+padding:80px 0;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 5vh; */
+    /* border: 1px black;
+    margin: 3px;
+    padding: 3px */
+}
+
+
+ h1 {
+color: salmon;
+justify-content:center;
+display:inline-block;
+padding:5px;
+border:1px solid black
+}
+
+h3{
+color:darkslategrey;
+}
+
+ h5 {
+border:1px solid black;
+    color:rgb(99, 92, 92);
+    display:inline-block
+}
+
+#firstContentWrap {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#firstimggroup {
+    justify-content: center;
+    align-items: center;
+    display:grid;
+    width: 70vw;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    grid-gap: .5rem;
+    grid-template-areas: 
+    "header header header"
+    "img1 img2 img3"
+    "textOne textTwo textThree"
+    "footer footer footer";
+}
+
+.imgtitle {
+    justify-content: center;
+    align-items: center;
+    grid-area: header;   
+    text-align: center;
+}
+
+#firstimggroup img {
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    width: 19vw;
+    height: 13vw;
+    /* padding:5px;  */
+}
+
+.img1 {
+    grid-area: img1;
+    justify-content: center;
+}
+
+.img2 {
+    grid-area: img2;
+    
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.textOne {
+    grid-area: textOne;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textTwo{
+    grid-area: textTwo;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textThree{
+    grid-area: textThree;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#firstimggroup button {
+    grid-area: footer;
+    color:white;
+    background-color: salmon;
+    width: 135px;
+    align-items: center;
+   
+}
+
+
+ #quotespace {
+     display:flex;
+     margin:45px 0;
+     padding: 30px 0;
+     height: 15vh;
+     justify-content: center;
+     align-items: center;
+     background-color: darkslategrey;
+     color:white;   
+ }
+
+
+.img5, .img4{
+    height: 300px;
+    width: 600px
+}
+
+
+
+
+#sect1 {
+    display: grid;
+    height: auto;
+    margin: 80px;
+    padding: 80px 0;
+    grid-gap: 1rem;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 50px 300px 75px 100px 25px 50px;
+    grid-template-areas: 
+    "aliens blogsection1"
+    "img4 blogsection1"
+    "liltitle blogsection1"
+    "alientext blogsection1"
+    "cont1 blogsection1"
+    "0 blogsection1"
+}
+
+#blogssection1 {
+    display: flex;
+    /* float: right; */
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    grid-area: blogsection1;
+    position:relative
+}
+
+.aliens {
+    grid-area: aliens;
+    padding:0
+}
+
+.img4 {
+    grid-area: img4;
+    height: 300px
+}
+
+.liltitle {
+    grid-area: liltitle;
+    
+}
+
+.alientext {
+    grid-area: alientext;
+}
+
+.cont1 {
+    grid-area: cont1;
+    align-items: flex-start;
+    text-align: center;
+}
+
+#sect1 > .cont1 {
+    height: 22px;
+    width: 150px;
+}
+
+
+#sect2{
+    display:grid;
+    width: 60vw;
+    height: auto;
+    margin: 80px;
+    padding: 80px 0;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 300px 100px 100px 50px;
+    grid-gap: .5rem;
+    grid-template-areas: 
+    "leftT flexone"
+    "img5 flexone"
+    "0 flextwo"
+    /* "img 5 flextwo" */
+    "previewL flextwo"
+    "buttoncont flextwo"
+
+}
+
+.leftT {
+    grid-area: leftT;
+    text-align: left;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.previewL {
+    grid-area: previewL;
+}
+
+.buttoncont {
+    grid-area: buttoncont;
+    height: 22px;
+    width: 135px
+}
+
+
+#rightsideposts {
+    display:flex;
+    width: 300px;
+    padding-left: 25px;
+    /* flex: left; */
+    /* flex-wrap: wrap; */
+    text-align: left;
+    flex-direction:column;
+    align-items: flex-start;
+    grid-area: flexone;
+}
+
+#rightsideposts2 {
+    display: flex;
+    width: 300px;
+    padding-left: 25px;
+    /* flex: left;
+    flex-wrap: wrap; */
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: flextwo
+}
+
+
+ .img6 , .img7 {
+     height: 80px;
+     width: 110px;
+     float:left;
+ }
