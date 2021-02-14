@@ -1,0 +1,101 @@
+body {
+    margin: 10px;
+    padding: 80px 0;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  
+  h1 {
+    color: salmon;
+    justify-content: center;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  
+  h3 {
+    color: darkslategrey;
+  }
+  
+  h5 {
+    border: 1px solid black;
+    color: rgb(99, 92, 92);
+    display: inline-block;
+  }
+
+
+
+
+  #leftside {
+      float:left;
+      display: grid;
+      width: 35vw;
+      height: 80vh;
+      grid-template-rows: 1fr 1fr 3fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "groupone"
+      "grouptwo"
+      "groupthree";
+  }
+
+  #leftside > button {
+      justify-content: left;
+      width: 55px;
+      justify-items: left;
+  }
+
+  #groupone {
+      display: flex;
+      grid-area: groupone;
+      float: left;
+      flex-direction: column;
+      /* width: 100vw */
+  }
+
+  #grouptwo {
+      display: flex;
+      grid-area: grouptwo;
+      float: left;
+      flex-direction: column;
+      /* width: 100vw; */
+  }
+
+#groupthree {
+      display: flex;
+      grid-area: groupthree;
+      float: left;
+      padding-top: 50px;
+      width: auto;
+      flex-direction: column;
+      text-align:left;
+      display: inline-block;
+      /* width: 100vw; */
+
+  }
+
+  .smlimg {
+      height: 110px;
+      width: 155px;
+  }
+  
+  
+  
+  #rightside {
+      float: right;
+      display: flex;
+      flex-direction: column;
+      width: 60vw;
+
+  }
+  
+  .bigimg {
+    height: 300px;
+    width:450px;
+}
