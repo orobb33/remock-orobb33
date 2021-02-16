@@ -49,28 +49,29 @@ h5 {
   width: 55vw;
 }
 
+/* foot stuff below */
+
 #footer {
   background-color: lightblue;
   margin-top: 5vw;
-  
 }
-
 
 
 #footer #footertit {
-text-align: center;
+  text-align: center;
 }
 
 #leftfoot {
+  float: left;
   display: grid;
-  grid-gap: .5em;
+  grid-gap: 0.5em;
   margin-left: 22.5vw;
   width: 22vw;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 4fr;
-  grid-template-areas: 
-  "name email"
-  "textbox textbox"
+  grid-template-areas:
+    "name email"
+    "textbox textbox";
 }
 
 #leftfoot #namey {
@@ -85,23 +86,92 @@ text-align: center;
   grid-area: textbox;
 }
 
+#rightlinks {
+  display: grid;
+  float: right;
+  grid-gap: 0.5em;
+  margin-right: 22vw;
+  width: 22vw;
+  grid-template-columns: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "feet feet feet feet"
+    "houseimg house twit twittoes"
+    "telimg phone insta handle"
+    "feetmail footmail dumbbook fb";
+}
+
+.feettext {
+  grid-area: feet;
+}
+
+.houseimg {
+  grid-area: houseimg;
+}
+
+.house {
+  grid-area: house;
+}
+
+.twit {
+  grid-area: twit;
+}
+
+.twittoes {
+  grid-area: twittoes;
+}
+
+.telimg {
+  grid-area: telimg;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.insta {
+  grid-area: insta;
+}
+
+.handle {
+  grid-area: handle;
+}
+
+.feetmail {
+  grid-area: feetmail;
+}
+
+.footmail {
+  grid-area: footmail;
+}
+
+.dumbbook {
+  grid-area: dumbbook;
+}
+
+.fb {
+  grid-area: fb;
+}
 
 label {
-  display:block;
-  font: 1rem
+  display: block;
+  font: 1rem;
 }
 
-
-input, label {
-  margin: .4rem 0;
+input,
+label {
+  margin: 0.4rem 0;
 }
-
-
 
 p {
   font-size: smaller;
 }
 
+
+#rightfoot img {
+  height: 30px;
+  width: 30px;
+}
 /* .titleone {
       text-align: center;
   } */

@@ -1,120 +1,120 @@
 body {
-    margin: 10px 100px;
-    padding: 80px 0;
-  }
-  
-  #header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 100px;
-  }
-  
-  h1 {
-    color: salmon;
-    justify-content: center;
-    display: inline-block;
-    padding: 5px;
-    border: 1px solid black;
-  }
-  
-  h3 {
-    color: darkslategrey;
-  }
-  
-  h5 {
-    border: 1px solid black;
-    color: rgb(99, 92, 92);
-    display: inline-block;
-  }
+  margin: 10px 100px;
+  padding: 80px 0;
+}
 
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
 
+h1 {
+  color: salmon;
+  justify-content: center;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid black;
+}
 
+h3 {
+  color: darkslategrey;
+}
 
-  #leftside {
-      float:left;
-      display: grid;
-      width: 25vw;
-      height: 80vh;
-      grid-template-rows: 1fr 1fr 3fr;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-      "groupone"
-      "grouptwo"
-      "groupthree";
-  }
+h5 {
+  border: 1px solid black;
+  color: rgb(99, 92, 92);
+  display: inline-block;
+}
 
-  #leftside > button {
-      justify-content: left;
-      width: 55px;
-      justify-items: left;
-  }
+#main {
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+}
 
-  #groupone {
-      display: flex;
-      grid-area: groupone;
-      float: left;
-      flex-direction: column;
-      padding-bottom: 70px;
-      /* width: 100vw */
-  }
+#leftside {
+  float: left;
+  display: grid;
+  width: 25vw;
+  height: 70vh;
+  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "groupone"
+    "grouptwo"
+    "groupthree";
+}
 
-  #grouptwo {
-      display: flex;
-      grid-area: grouptwo;
-      float: left;
-      flex-direction: column;
-      /* margin-top: 50px;
+#leftside > button {
+  justify-content: left;
+  width: 55px;
+  justify-items: left;
+}
+
+#groupone {
+  display: flex;
+  grid-area: groupone;
+  float: left;
+  flex-direction: column;
+  padding-bottom: 70px;
+  /* width: 100vw */
+}
+
+#grouptwo {
+  display: flex;
+  grid-area: grouptwo;
+  float: left;
+  flex-direction: column;
+  /* margin-top: 50px;
       margin-bottom: 50px; */
-      /* width: 100vw; */
-  }
+  /* width: 100vw; */
+}
 
 #groupthree {
-      display: flex;
-      grid-area: groupthree;
-      float: left;
-      padding-top: 50px;
-      width: auto;
-      flex-direction: column;
-      text-align:left;
-      /* display: inline-block; */
-      /* width: 100vw; */
-  }
+  display: flex;
+  grid-area: groupthree;
+  float: left;
+  padding-top: 50px;
+  width: auto;
+  flex-direction: column;
+  text-align: left;
+  /* display: inline-block; */
+  /* width: 100vw; */
+}
 
-  #groupthree > p {
-    float: left;
-    justify-content: flex-start;
-    flex-direction: column;
-    text-align: left;
-    display: inline-block
-  }
+#groupthree > p {
+  float: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  display: inline-block;
+}
 
-  #groupthree button {
-    display: inline-block;
-    justify-content: left;
-    align-items: flex-end;
-  }
+#groupthree button {
+  display: inline-block;
+  justify-content: left;
+  align-items: flex-end;
+}
 
-  .smlimg {
-      height: 110px;
-      width: 155px;
-  }
-  
-  
-  
-  #rightside {
-      float: right;
-      display: flex;
-      flex-direction: column;
-      width: 55vw;
-      height: 80vh;
+.smlimg {
+  height: 110px;
+  width: 155px;
+}
 
-  }
-  
-  .bigimg {
-    height: 300px;
-    width:55vw;
+#rightside {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+  height: 70vh;
+}
+
+.bigimg {
+  height: 300px;
+  width: 55vw;
 }
 
 button {
@@ -123,5 +123,128 @@ button {
 
 p {
   font-size: smaller;
+}
 
+/* foot stuff below */
+
+#footer {
+  background-color: lightblue;
+  margin-top: 70vw;
+  display: inline-block;
+  width: 100vw;
+}
+
+#footer #footertit {
+  text-align: center;
+}
+
+#leftfoot {
+  float: left;
+  display: grid;
+  grid-gap: 0.5em;
+  margin-left: 22.5vw;
+  width: 22vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "name email"
+    "textbox textbox";
+}
+
+#leftfoot #namey {
+  grid-area: name;
+}
+
+#leftfoot #emaily {
+  grid-area: email;
+}
+
+#leftfoot #subject {
+  grid-area: textbox;
+}
+
+#rightlinks {
+  display: grid;
+  float: right;
+  grid-gap: 0.5em;
+  margin-right: 22vw;
+  width: 22vw;
+  grid-template-columns: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "feet feet feet feet"
+    "houseimg house twit twittoes"
+    "telimg phone insta handle"
+    "feetmail footmail dumbbook fb";
+}
+
+.feettext {
+  grid-area: feet;
+}
+
+.houseimg {
+  grid-area: houseimg;
+}
+
+.house {
+  grid-area: house;
+}
+
+.twit {
+  grid-area: twit;
+}
+
+.twittoes {
+  grid-area: twittoes;
+}
+
+.telimg {
+  grid-area: telimg;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.insta {
+  grid-area: insta;
+}
+
+.handle {
+  grid-area: handle;
+}
+
+.feetmail {
+  grid-area: feetmail;
+}
+
+.footmail {
+  grid-area: footmail;
+}
+
+.dumbbook {
+  grid-area: dumbbook;
+}
+
+.fb {
+  grid-area: fb;
+}
+
+label {
+  display: block;
+  font: 1rem;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+p {
+  font-size: smaller;
+}
+
+#rightfoot img {
+  height: 30px;
+  width: 30px;
 }
