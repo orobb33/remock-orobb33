@@ -40,7 +40,64 @@ h5 {
   width: 100vw;
 }
 
+#dumbdumb {
+  margin: 5px 22.5vw;
+  width: 55vw;
+}
+
 .bigboi {
+  width: 55vw;
+}
+
+#footer {
+  background-color: lightblue;
+  margin-top: 5vw;
+  
+}
+
+
+
+#footer #footertit {
+text-align: center;
+}
+
+#leftfoot {
+  display: grid;
+  width: 35vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: 
+  "name email"
+  "textbox textbox"
+}
+
+#leftfoot #namey {
+  grid-area: name;
+}
+
+#leftfoot #emaily {
+  grid-area: email;
+}
+
+#leftfoot #subject {
+  grid-area: textbox;
+}
+
+
+label {
+  display:block;
+  font: 1rem
+}
+
+
+input, label {
+  margin: .4rem 0;
+}
+
+
+
+p {
+  font-size: smaller;
 }
 
 /* .titleone {
