@@ -63,7 +63,9 @@ text-align: center;
 
 #leftfoot {
   display: grid;
-  width: 35vw;
+  grid-gap: .5em;
+  margin-left: 22.5vw;
+  width: 22vw;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 4fr;
   grid-template-areas: 
