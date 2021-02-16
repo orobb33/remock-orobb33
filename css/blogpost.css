@@ -38,7 +38,8 @@ h5 {
 #leftside {
   float: left;
   display: grid;
-  width: 25vw;
+  width: 22vw;
+  padding-right: 3vw;
   height: 70vh;
   grid-template-rows: 1fr 1fr 3fr;
   grid-template-columns: 1fr;
@@ -108,6 +109,7 @@ h5 {
   float: right;
   display: flex;
   flex-direction: column;
+  
   width: 55vw;
   height: 70vh;
 }
