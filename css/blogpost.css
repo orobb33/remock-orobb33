@@ -4,6 +4,7 @@ body {
 }
 
 #header {
+  padding-top: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,33 +14,53 @@ body {
 
 h1 {
   color: salmon;
-  justify-content: center;
-  display: inline-block;
-  padding: 5px;
-  border: 1px solid black;
+justify-content:center;
+display:inline-block;
+padding:0px;
+font-family: 'Sanchez', serif;
+font-size: xx-large;
+text-shadow: 1px 1px 2px lightgray;
 }
 
 h3 {
   color: darkslategrey;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  color:rgb(83, 79, 79);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tittle {
+  color:rgb(83, 79, 79);
+  font-family: 'Montserrat', sans-serif; 
 }
 
 h5 {
-  border: 1px solid black;
-  color: rgb(99, 92, 92);
+  color:rgb(83, 79, 79);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
   display: inline-block;
 }
+
+
 
 #main {
   display: flex;
   flex-direction: column;
   display: inline-block;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  height:70vh;
 }
+
 
 #leftside {
   float: left;
   display: grid;
   width: 22vw;
-  padding-right: 3vw;
+  padding-right: 5vw;
   height: 70vh;
   grid-template-rows: 1fr 1fr 3fr;
   grid-template-columns: 1fr;
@@ -49,29 +70,71 @@ h5 {
     "groupthree";
 }
 
-#leftside > button {
+
+.leftbutton {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border: none;
+  outline: none;
+  height: 26px;
+  background-color:rgb(110, 105, 105);
+padding-bottom: 5vh;
+/* text-shadow: 1px 1px 2px lightgray; */
+}
+
+/* #leftside > button {
   justify-content: left;
   width: 55px;
   justify-items: left;
-}
+  
+} */
 
 #groupone {
   display: flex;
   grid-area: groupone;
-  float: left;
+  /* float: left; */
   flex-direction: column;
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
   /* width: 100vw */
+}
+
+.leftbutton {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border: none;
+  outline: none;
+  width: 75px;
+  background-color:rgb(110, 105, 105);
+  padding-bottom: 4vh;
+  
+  
+
 }
 
 #grouptwo {
   display: flex;
   grid-area: grouptwo;
-  float: left;
+  /* float: left; */
   flex-direction: column;
   /* margin-top: 50px;
       margin-bottom: 50px; */
   /* width: 100vw; */
+}
+
+.leftpara {
+  font-family: 'Montserrat', sans-serif;
+line-height: 1.5;
+padding-bottom: 2vh;
+font-size: x-small;
+}
+
+.lefttitle {
+  padding-bottom: 0vh;
+  margin-bottom: 0;
+}
+
+.bottomtitle {
+  padding-bottom: 2vh;
 }
 
 #groupthree {
@@ -93,16 +156,16 @@ h5 {
   text-align: left;
   display: inline-block;
 }
-
+/* 
 #groupthree button {
   display: inline-block;
   justify-content: left;
   align-items: flex-end;
-}
+} */
 
 .smlimg {
-  height: 110px;
-  width: 155px;
+  height: 90px;
+  width: 100px;
 }
 
 #rightside {
@@ -110,27 +173,59 @@ h5 {
   display: flex;
   flex-direction: column;
   
-  width: 55vw;
+  width: 45vw;
   height: 70vh;
+}
+
+.bigpara {
+  font-family: 'Montserrat', sans-serif;
+line-height: 2;
+padding-bottom: 2vh;
+font-size: x-small;
+}
+
+.secondmain {
+padding-bottom: 3vh;
+
+}
+
+.thirdtitle {
+  padding-top: 3vh;
 }
 
 .bigimg {
   height: 300px;
-  width: 55vw;
+  width: 45vw;
 }
 
-button {
-  width: 70px;
-}
 
 p {
   font-size: smaller;
 }
 
+.bottomtext {
+font-family: 'Montserrat', sans-serif;
+line-height: 1.5;
+font-size: x-small;
+float: left;
+padding-top: 2vh;
+}
+
+.learny {
+  height: 40px;
+  width: 170px;
+  border: none;
+  outline: none;
+  background-color: salmon;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  
+}
+
 /* foot stuff below */
 
 #footer {
-  background-color: lightblue;
+  background-color: rgba(176, 180, 182, 0.788);
   margin-top: 70vw;
   display: inline-block;
   width: 100vw;

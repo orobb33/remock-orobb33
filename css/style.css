@@ -1,7 +1,4 @@
-body{
-/* margin:10px;
-padding:80px 0; */
-
+body {
 margin: 0;
 padding: 0;
 }
@@ -176,7 +173,8 @@ background: radial-gradient(circle, rgba(177,177,185,1) 14%, rgba(131,131,131,1)
     display: grid;
     font-size: small;
     font-family: 'Montserrat', sans-serif;
-    
+    padding-left: 7vw;
+    padding-right: 7vw;
     height: auto;
     margin: 80px 12vw;
     grid-gap: 1rem;
@@ -259,6 +257,7 @@ background: radial-gradient(circle, rgba(177,177,185,1) 14%, rgba(131,131,131,1)
     width: 60vw;
     height: auto;
     margin: 80px 12vw;
+    padding-left: 7vw;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: .5fr 300px .05fr 1fr .5fr;
     grid-gap: .5rem;
@@ -280,6 +279,7 @@ background: radial-gradient(circle, rgba(177,177,185,1) 14%, rgba(131,131,131,1)
 
 .img5 {
     grid-area: img5;
+    height: 300px;
 }
 
 .previewL {
@@ -303,7 +303,8 @@ background: radial-gradient(circle, rgba(177,177,185,1) 14%, rgba(131,131,131,1)
 #rightsideposts {
     display:flex;
     width: 300px;
-    padding-left: 7vw;
+    padding-left: 4vw;
+    padding-right: 13vw;
     text-align: left;
     flex-direction:column;
     align-items: flex-start;
@@ -333,12 +334,13 @@ height: 30px;
 #rightsideposts2 {
     display: flex;
     width: 300px;
-    padding-left: 7vw;
+    padding-left: 4vw;
     text-align: left;
     align-items: flex-start;
     flex-direction: column;
     grid-area: flextwo;
      font-family: 'Montserrat', sans-serif;
+
 }
 
 .rightT {
@@ -347,7 +349,7 @@ height: 30px;
 
 .rightP {
   font-size: small;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
  .img6 , .img7 {
@@ -358,14 +360,16 @@ height: 30px;
 
 /* foot stuff below */
 
-#shoe {
+/* #shoe {
   background-color: lightgray;
   
-}
+} */
 
  #footer {
     background-color: rgba(176, 180, 182, 0.788);
-    margin-top: 5vw;
+    /* margin-top: 55vh; */
+    width: 100vw;
+    display: inline-block;
   }
   
   
