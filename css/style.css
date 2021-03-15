@@ -13,7 +13,6 @@ padding: 0;
 }
 
 
-
  h1 {
 color: salmon;
 justify-content:center;
@@ -360,10 +359,7 @@ height: 30px;
 
 /* foot stuff below */
 
-/* #shoe {
-  background-color: lightgray;
-  
-} */
+
 
  #footer {
     background-color: rgba(176, 180, 182, 0.788);
